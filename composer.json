@@ -1,0 +1,27 @@
+{
+	"name": "jsoltani/js-basic-mvcFramework",
+    "description": "basic MVC Framework for php",
+    "type": "library",
+    "homepage": "https://github.com/jsoltani/js-basic-mvcFramework",
+    "license": "MIT",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Javad soltani",
+            "email": "j.soltani.it@gmail.com"
+        }
+    ],
+    "require": {
+		"miladrahimi/phpcrypt": "3.*",
+		"voku/anti-xss": "^2.2",
+        "sallar/jdatetime": "dev-master",
+		"doctrine/cache": "^1.6"
+	},
+    "autoload": {
+        "psr-4": {
+             "core\\": "core/",
+             "app\\": "app/"
+        }
+    }
+}
