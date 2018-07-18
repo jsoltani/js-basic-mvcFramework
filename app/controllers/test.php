@@ -8,6 +8,7 @@ if( !defined( 'JS') ){
 
 use core\jsController as controller;
 use core\jsView;
+use \app\models\test as testModel;
 
 /**
  * test controller
@@ -36,5 +37,15 @@ class test extends controller {
             'content' => 'Test Page Content'
         ]);
 
+    }
+
+    /**
+     * get all information of users
+     */
+    public function getAllUsersAction() {
+        jsView::render('test/get-all-users.php',[
+            'title' => 'get all users',
+            'userInfo' => testModel::getUsers()
+        ]);
     }
 }
